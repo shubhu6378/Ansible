@@ -1,0 +1,12 @@
+Here we wil do basic linux command with help of anisbile to create a file from master server to slave server.
+
+1. Create a inventory file and under inventory file place the IP of slave servers.
+2. we can run below command :
+
+ansible -i inventory all -m "shell" -a "touch filename"
+
+this will create a file in slave server.
+
+Here for using adhoc ansible command, we are using ansible
+-m denotes mode
+all denotes all content in inventory file means all server mentioned in that file
